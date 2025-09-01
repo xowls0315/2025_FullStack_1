@@ -1,0 +1,19 @@
+.image_box {
+  width: 200px;
+  height: 200px;
+  padding: 5px;
+  border-radius: 999px;
+  border: 5px solid palevioletred;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.image_box > .image {
+  width: 200px;
+  height: 200px;
+  border-radius: 999px;
+}
+.image_box > span {
+  font-size: 25px;
+}
