@@ -1,0 +1,12 @@
+.button {
+  background-color: #fee500;
+  padding: 20px 100px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.button:hover {
+  transform: scale(1.05);
+}

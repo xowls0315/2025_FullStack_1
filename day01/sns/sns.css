@@ -1,0 +1,33 @@
+.facebook {
+  padding: 20px 50px;
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.google {
+  padding: 20px 50px;
+  background-color: white;
+  color: gray;
+  border: none;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: bold;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.apple {
+  padding: 20px 50px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-size: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+i {
+  margin-right: 10px;
+}
