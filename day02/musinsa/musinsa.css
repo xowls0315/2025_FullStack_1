@@ -1,0 +1,16 @@
+.card {
+  width: 250px;
+  height: 350px;
+  position: relative;
+}
+.card > img {
+  width: 100%;
+  height: 100%;
+}
+.card > i {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 30px;
+  color: white;
+}

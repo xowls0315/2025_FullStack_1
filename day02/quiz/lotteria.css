@@ -1,0 +1,17 @@
+button {
+  padding: 5px 15px;
+  background-color: gainsboro;
+  color: gray;
+  border: none;
+  border-radius: 5px;
+}
+.menu {
+  background-color: rgb(36, 156, 204);
+  color: white;
+}
+.burger > img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}

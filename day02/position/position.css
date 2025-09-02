@@ -1,0 +1,13 @@
+.box {
+  width: 800px;
+  height: 800px;
+  border: 1px solid red;
+  position: relative;
+}
+.minibox {
+  width: 100px;
+  height: 100px;
+  background-color: skyblue;
+  position: absolute;
+  right: 100px;
+}
