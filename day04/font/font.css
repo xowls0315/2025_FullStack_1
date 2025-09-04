@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "BagelFat";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_JAMO@1.0/BagelFatOne-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+h1 {
+  font-family: "BagelFat";
+  font-size: 30px;
+}

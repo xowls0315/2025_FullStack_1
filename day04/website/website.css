@@ -1,0 +1,248 @@
+:root {
+  --header-height: 80px;
+}
+header {
+  height: var(--header-height);
+}
+header > nav {
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header > nav > h2 {
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 10px;
+  cursor: pointer;
+}
+header > nav > h2 > span {
+  font-weight: normal;
+  color: gray;
+}
+header > nav > .menu {
+  display: flex;
+  gap: 15px;
+}
+.menu > button {
+  background-color: transparent;
+  font-weight: bold;
+  color: #383838;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  padding: 6px 12px;
+}
+.menu > button:hover {
+  background-color: gainsboro;
+}
+.menu > .menu_picked {
+  color: #ff5160;
+}
+
+.hero {
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - var(--header-height));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 영상이 화면을 꽉 채우도록 */
+  z-index: -1; /* 글자 뒤로 배치 */
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  color: white;
+}
+.hero-content > h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.motto {
+  width: 100vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 200px 0px;
+}
+.motto > .motto-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 200px;
+}
+.motto > .motto-header > h2 {
+  color: #757575;
+  font-size: 40px;
+}
+.motto-header > .motto-header-last {
+  margin: 30px 0px;
+}
+.motto-header > .motto-header-last > span {
+  color: black;
+  font-weight: bold;
+}
+.motto > .motto-content {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  gap: 20px;
+  height: 1000px;
+}
+.motto-content > .motto-content1 {
+  grid-area: 1 / 1 / 3 / 5;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.motto-content > .motto-content1 > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+.motto-content1-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+}
+.motto-content1-info > h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #757575;
+}
+.motto-content1-info > span {
+  font-size: 40px;
+  font-weight: bold;
+}
+.motto-content > .motto-content2 {
+  grid-area: 1 / 5 / 3 / 11;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.motto-content > .motto-content2 > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+.motto-content2-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+}
+.motto-content2-info > h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #757575;
+}
+.motto-content2-info > span {
+  font-size: 40px;
+  font-weight: bold;
+}
+.motto-content > .motto-content3 {
+  grid-area: 3 / 1 / 7 / 7;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-image: url("https://ably.team/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fably-team%2FaGshlUMqNJQqHlb-_ABLY.png%3Fauto%3Dformat%2Ccompress%26rect%3D0%2C0%2C2497%2C3201%26w%3D624%26h%3D800&w=1920&q=75");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.motto-content3-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+}
+.motto-content3-info > h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+.motto-content3-info > span {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+.motto-content > .motto-content4 {
+  grid-area: 7 / 1 / 9 / 7;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.motto-content > .motto-content4 > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+.motto-content4-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.motto-content4-info > h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #757575;
+}
+.motto-content4-info > span {
+  font-size: 40px;
+  font-weight: bold;
+}
+.motto-content > .motto-content5 {
+  grid-area: 3 / 7 / 9 / 11;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-image: url("https://ably.team/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fably-team%2F7d9a40ce-b0de-4877-bc4e-c22e8b39e205_%25E1%2584%2582%25E1%2585%25AE%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25A8%2B%25E1%2584%2585%25E1%2585%25B5%25E1%2584%2587%25E1%2585%25B2%25E1%2584%2589%25E1%2585%25AE%2B3500%25E1%2584%2586%25E1%2585%25A1%25E1%2586%25AB%25E1%2584%2580%25E1%2585%25A2.png%3Fauto%3Dcompress%2Cformat%26rect%3D0%2C0%2C2497%2C3201%26w%3D624%26h%3D800&w=1920&q=75");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.motto-content5-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 40px;
+}
+.motto-content5-info > h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+.motto-content5-info > span {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}

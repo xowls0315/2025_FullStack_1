@@ -1,0 +1,42 @@
+section {
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: #f7f2e6;
+}
+section > h2 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: start;
+}
+main {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.card {
+  width: 350px;
+  height: 500px;
+  background-image: url("https://pixabay.com/get/gb150c12bef3e5c5b3b618483aac68401f18cfd2fa38d52ef566959ab2a69862a1480453505657fcc26eae924e4b401ef18616607ea8075962f17961ed0d8e092_640.png");
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 20px 30px;
+  box-sizing: border-box;
+}
+.card > h3 {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+.card > span {
+  color: white;
+  margin-top: 20px;
+}
