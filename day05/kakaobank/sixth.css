@@ -1,0 +1,50 @@
+.sixth {
+  width: 100vw;
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff url("https://www.kakaobank.com/static/images/web/home_map.png") no-repeat -12% 50%;
+}
+.sixth > img {
+  width: 408px;
+  object-fit: cover;
+
+  /* 초기: 살짝 아래에 있고 투명 */
+  transform: translateY(200px);
+  opacity: 0;
+  transition: all, transform 1.4s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s, opacity 1.4s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s;
+}
+/* 50% 보이기 시작하면 붙는 클래스 */
+.sixth > img.is-visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+.sixth-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 100px;
+  gap: 15px;
+}
+.sixth-content > h2 {
+  font-size: 45px;
+  font-weight: bold;
+}
+.sixth-content > span {
+  color: #615b29;
+}
+.sixth-content > .sixth-content-btn {
+  width: fit-content;
+  padding: 15px 80px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.5s;
+  margin-top: 20px;
+}
+.sixth-content > .sixth-content-btn:hover {
+  text-decoration: underline;
+}

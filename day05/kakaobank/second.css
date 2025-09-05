@@ -1,0 +1,39 @@
+.second {
+  width: 100vw;
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.second > img {
+  width: 473px;
+  object-fit: cover;
+}
+.second-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 100px;
+  gap: 15px;
+}
+.second-content > h2 {
+  font-size: 45px;
+  font-weight: bold;
+}
+.second-content > span {
+  color: #615b29;
+}
+.second-content > .second-content-btn {
+  width: fit-content;
+  padding: 15px 45px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.5s;
+}
+.second-content > .second-content-btn:hover {
+  text-decoration: underline;
+}

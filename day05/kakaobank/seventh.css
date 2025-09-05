@@ -1,0 +1,92 @@
+.seventh {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 950px;
+  display: flex;
+  justify-content: center;
+
+  /* 초기 실제 배경색(보일 색): 파란색 */
+  background-color: #559cde;
+
+  /* 배경색 자체도 바뀌게(요구사항 충족) */
+  transition: background-color 1s cubic-bezier(0.6, 0.2, 0.1, 1);
+}
+/* 배경만 가리는 오버레이: 최종 색(#343c59)로 칠해 아래쪽에 대기 */
+.seventh::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #343c59;
+
+  /* 처음엔 아래에 숨어 있음 */
+  transform: translateY(100%);
+
+  /* 요청한 이징/지속시간으로 슬라이드 */
+  transition: transform 1s cubic-bezier(0.6, 0.2, 0.1, 1);
+
+  /* 상호작용 막지 않기 */
+  pointer-events: none;
+
+  /* 컨텐츠 위로 올라오지 않게 z 정리(컨텐츠가 1) */
+  z-index: 0;
+}
+/* 자식들은 항상 오버레이보다 위 */
+.seventh > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* 50% 이상 보이면: 
+   1) 실제 background-color를 최종색으로 변경(요구사항)
+   2) 오버레이를 위로 끌어올려 배경 전환을 '슬라이드'로 연출
+*/
+.seventh.is-visible {
+  background-color: #343c59;
+}
+.seventh.is-visible::before {
+  transform: translateY(0);
+}
+
+.seventh-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 200px 0 100px;
+  gap: 30px;
+  position: relative;
+}
+
+.seventh-content > h2 {
+  font-size: 45px;
+  font-weight: bold;
+  color: white;
+}
+.seventh-content > span {
+  color: gainsboro;
+}
+.seventh-content-btns {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.seventh-content-btns > button {
+  background-color: #444c66;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.5s;
+}
+.seventh-content-btns > button:hover {
+  text-decoration: underline;
+}
+.seventh-content > img {
+  width: 429px;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0px;
+}
